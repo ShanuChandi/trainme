@@ -252,7 +252,7 @@ if __name__ == "__main__":
 
     input_shape = X_train.shape[1:]
 
-    resolver = tf.distribute.cluster_resolver.TPUClusterResolver(tpu="")
+    resolver = tf.distribute.cluster_resolver.TPUClusterResolver(tpu="my-tpu")
     tf.config.experimental_connect_to_cluster(resolver)
     tf.tpu.experimental.initialize_tpu_system(resolver)
     strategy = tf.distribute.TPUStrategy(resolver)
