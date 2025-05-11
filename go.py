@@ -93,10 +93,10 @@ def load_tfrecord_dataset(file_pattern, batch_size, shuffle=True):
 
 
 train_dataset = load_tfrecord_dataset(
-    "gs://your-bucket/train*.tfrecord", batch_size=BATCH_SIZE
+    "musdb18/train/train.tfrecord", batch_size=BATCH_SIZE
 )
 val_dataset = load_tfrecord_dataset(
-    "gs://your-bucket/val*.tfrecord", batch_size=BATCH_SIZE, shuffle=False
+    "musdb18/test/test.tfrecord", batch_size=BATCH_SIZE, shuffle=False
 )
 
 # --- TRAINING LOOP ---

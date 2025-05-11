@@ -22,3 +22,4 @@ def extract_stems_from_folder(input_folder, output_folder):
 
 # Example usage:
 extract_stems_from_folder("data/train", "musdb18/train")
+extract_stems_from_folder("data/test", "musdb18/test")

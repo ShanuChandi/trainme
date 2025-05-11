@@ -46,3 +46,4 @@ def write_tfrecord(data_dir, output_path):
 
 
 write_tfrecord("musdb18/train", "train.tfrecord")
+write_tfrecord("musdb18/test", "test.tfrecord")
